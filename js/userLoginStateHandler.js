@@ -15,7 +15,18 @@ function SetupAccountButton() {
   const accBtn = document.getElementById("accBtn");
   const loggedInUser = GetLoggedInUser();
 
-  accBtn.setAttribute("href", loggedInUser ? "userAccount.html" : "login.html");
+  accBtn.setAttribute(
+    "href",
+    loggedInUser
+      ? getRelativePath("pages/userAccount.html")
+      : getRelativePath("pages/login.html")
+  );
+}
+
+function getRelativePath(targetPath) {
+  const depth = window.location.pathname.split("/").length - 2;
+  const prefix = "../".repeat(depth);
+  return prefix + targetPath;
 }
 
 // Once again we find the loggedIn user

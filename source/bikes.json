@@ -7,7 +7,7 @@
         "price": 1200.00,
         "color_schemes": ["Red", "Black"],
         "short_description": "A lightweight road bike engineered for speed and agility.",
-        "image_source": "./images/ShopPage/example.avif"
+        "image_source": "../images/ShopPage/example.avif"
     },
     {
         "id" : 2,
@@ -17,7 +17,7 @@
         "price": 950.00,
         "color_schemes": ["Matte Blue", "White"],
         "short_description": "Perfect for urban commuting, blending comfort and style.",
-        "image_source": "./images/ShopPage/example.avif"
+        "image_source": "../images/ShopPage/example.avif"
     },
     {
         "id" : 3,
@@ -27,7 +27,7 @@
         "price": 1500.00,
         "color_schemes": ["Green", "Gray"],
         "short_description": "Built for rugged terrains and steep trails with superior suspension.",
-        "image_source": "./images/ShopPage/example.avif"
+        "image_source": "../images/ShopPage/example.avif"
     },
     {
         "id" : 4,
@@ -37,7 +37,7 @@
         "price": 1100.00,
         "color_schemes": ["Silver", "Charcoal"],
         "short_description": "Combines the best features of road and mountain bikes for a versatile ride.",
-        "image_source": "./images/ShopPage/example.avif"
+        "image_source": "../images/ShopPage/example.avif"
     },
     {
         "id" : 5,
@@ -47,7 +47,7 @@
         "price": 2300.00,
         "color_schemes": ["Yellow", "Black"],
         "short_description": "Aerodynamically optimized for the ultimate race performance.",
-        "image_source": "./images/ShopPage/example.avif"
+        "image_source": "../images/ShopPage/example.avif"
     },
     {
         "id" : 6,
@@ -57,6 +57,6 @@
         "price": 780.00,
         "color_schemes": ["Pink", "Beige"],
         "short_description": "Designed for leisurely rides with unmatched comfort and ease.",
-        "image_source": "./images/ShopPage/example.avif"
+        "image_source": "../images/ShopPage/example.avif"
     }
 ]

@@ -49,7 +49,7 @@ async function CheckOutCart() {
   let cardData = {};
 
   try {
-    const response = await fetch("./source/paymentCardDetails.json");
+    const response = await fetch("../source/paymentCardDetails.json");
 
     cardData = await response.json();
   } catch (error) {
@@ -79,7 +79,7 @@ async function CheckOutCart() {
 
       localStorage.setItem("currentCartItems", JSON.stringify([])); // empty array = empty cart
 
-      window.location = "./index.html";
+      window.location = "../index.html";
     }, 3000);
   } else {
     // invalid payment details

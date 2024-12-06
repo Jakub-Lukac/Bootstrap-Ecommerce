@@ -69,7 +69,7 @@ function LogOut() {
   if (loggedInUser) {
     loggedInUser.loggedIn = "false";
     localStorage.setItem("usersDetails", JSON.stringify(usersDetails));
-    window.location.href = "./index.html";
+    window.location.href = "../index.html";
   }
 }
 

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     //  await keyword (blocking behaviour) ==> Each "function" must finish before the next one starts
-    const response = await fetch("./source/bikes.json");
+    const response = await fetch("../source/bikes.json");
 
     /*if (!response.ok) {
        throw new Error(`HTTP error! Status: ${response.status}`);

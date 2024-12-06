@@ -56,7 +56,7 @@ function RegisterUser() {
   ShowSuccessAlert(form);
 
   setTimeout(() => {
-    window.location.href = "./index.html";
+    window.location.href = "../index.html";
   }, 2000);
 }
 
