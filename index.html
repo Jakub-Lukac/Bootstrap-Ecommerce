@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rydex Bicycles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/badge.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top">
+        <div class="container-fluid container-lg d-flex justify-content-start">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand my-2 mx-3" href="index.html">
+                <img src="images/logo.png" width="100" height="40" alt="Rydex bicycles">
+            </a>
+
+            <!-- This one is not being displayed on lg and larger screens -->
+
+            <div class="d-flex ms-auto gap-4 order-xs-1 order-md-2">
+                <div id="accountWrapper" class="position-relative d-inline-block">
+                    <span id="cartCount"
+                        class="position-absolute top-0 start-0 badge rounded-pill text-bg-primary"></span>
+                    <a class="nav-link" href="cart.html">
+                        <i class="bi bi-cart-fill fs-1"></i>
+                    </a>
+                </div>
+
+                <div id="cartWrapper" class="position-relative d-inline-block">
+                    <!-- Text Badge -->
+                    <span id="userGreeting"
+                        class="badge rounded-pill text-bg-primary position-absolute top-0 start-0"></span>
+                    <!-- Account Icon -->
+                    <a id="accBtn" class="nav-link" href="">
+                        <i class="bi bi-person-circle fs-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end mx-5 order-xs-2 order-md-1"
+                id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#">Contact us</a>
+                </div>
+            </div>
+
+            <!-- This one is being displayed on lg and larger screens -->
+
+        </div>
+    </nav>
+
+    <!--By giving the hero section dispaly:flex, we can justify the content to end-->
+    <div id="hero" class="container-fluid d-flex flex-column justify-content-end">
+        <div class="row text-center mb-5 justify-content-center">
+            <div class="col-md-12 my-3">
+                <div class="display-5 fw-bold text-light">Go All Out</div>
+            </div>
+            <div class="col-md-3 my-3">
+                <button class="btn btn-primary">Shop the bikes</button>
+            </div>
+            <div class="col-md-3 my-3">
+                <button class="btn btn-outline-primary">Reach out to us</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="mx-5 mt-5 carousel slide">
+        <div class="display-4 fw-bold">Discover more from Rydex</div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner mt-5">
+            <div class="carousel-item active p-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 d-none d-md-block">
+                        <a href="shop.html">
+                            <div class="position-relative overflow-hidden rounded shadow">
+                                <img src="images/homePage/scenery01.avif" class="img-fluid object-fit-cover w-100"
+                                    alt="...">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="shop.html">
+                            <div class="position-relative overflow-hidden rounded shadow">
+                                <img src="images/homePage/scenery02.avif" class="img-fluid object-fit-cover w-100"
+                                    alt="...">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item p-3">
+                <div class="row justify-content-center ">
+                    <div class="col-md-4 d-none d-md-block">
+                        <a href="shop.html">
+                            <div class="position-relative overflow-hidden rounded shadow">
+                                <img src="images/homePage/scenery01.avif" class="img-fluid object-fit-cover w-100"
+                                    alt="...">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="shop.html">
+                            <div class="position-relative overflow-hidden rounded shadow">
+                                <img src="images/homePage/scenery02.avif" class="img-fluid object-fit-cover w-100"
+                                    alt="...">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item p-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 d-none d-md-block">
+                        <a href="shop.html">
+                            <div class="position-relative overflow-hidden rounded shadow">
+                                <img src="images/homePage/scenery01.avif" class="img-fluid object-fit-cover w-100"
+                                    alt="...">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="shop.html">
+                            <div class="position-relative overflow-hidden rounded shadow">
+                                <img src="images/homePage/scenery02.avif" class="img-fluid object-fit-cover w-100"
+                                    alt="...">
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon visually-hidden " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid p-5">
+        <div class="display-4 fw-bold mb-5">Get to know us</div>
+        <div class="row justify-content-center align-items-center g-5">
+            <div class="col-md-4 d-none d-md-block">
+                <img class="img-fluid object-fit-cover w-100 rounded shadow" src="./images/homePage/scenery06.avif"
+                    alt="Scenery">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid object-fit-cover w-100 rounded shadow" src="./images/homePage/scenery06.avif"
+                    alt="Scenery">
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="aboutUs.html" class="btn btn-primary btn-lg px-5">Read More</a>
+        </div>
+    </div>
+
+
+    <footer class="text-center bg-secondary text-center mt-3 p-3 align-bottom">
+        <p class="text-light fw-bold m-0">Copyright &copy; 2024 Rydex Bicycles</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/userLoginStateHandler.js"></script>
+</body>
+
+</html>

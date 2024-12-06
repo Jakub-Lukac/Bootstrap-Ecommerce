@@ -1,0 +1,6 @@
+#hero {
+  height: 70vh;
+  background-image: url("../images/homePage/heroImage.avif");
+  background-position: 40% 15%;
+  background-size: cover;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "brand": "Rydex",
+        "model_name": "Speedster 2000",
+        "year_of_make": 2023,
+        "price": 1200.00,
+        "color_schemes": ["Red", "Black"],
+        "short_description": "A lightweight road bike engineered for speed and agility.",
+        "image_source": "./images/ShopPage/example.avif"
+    },
+    {
+        "id" : 2,
+        "brand": "Velocity",
+        "model_name": "Urban Cruiser X",
+        "year_of_make": 2024,
+        "price": 950.00,
+        "color_schemes": ["Matte Blue", "White"],
+        "short_description": "Perfect for urban commuting, blending comfort and style.",
+        "image_source": "./images/ShopPage/example.avif"
+    },
+    {
+        "id" : 3,
+        "brand": "TrailBlazer",
+        "model_name": "Mountain Pro 500",
+        "year_of_make": 2022,
+        "price": 1500.00,
+        "color_schemes": ["Green", "Gray"],
+        "short_description": "Built for rugged terrains and steep trails with superior suspension.",
+        "image_source": "./images/ShopPage/example.avif"
+    },
+    {
+        "id" : 4,
+        "brand": "EcoRide",
+        "model_name": "Hybrid Comfort Plus",
+        "year_of_make": 2023,
+        "price": 1100.00,
+        "color_schemes": ["Silver", "Charcoal"],
+        "short_description": "Combines the best features of road and mountain bikes for a versatile ride.",
+        "image_source": "./images/ShopPage/example.avif"
+    },
+    {
+        "id" : 5,
+        "brand": "RacePro",
+        "model_name": "AeroMax 900",
+        "year_of_make": 2024,
+        "price": 2300.00,
+        "color_schemes": ["Yellow", "Black"],
+        "short_description": "Aerodynamically optimized for the ultimate race performance.",
+        "image_source": "./images/ShopPage/example.avif"
+    },
+    {
+        "id" : 6,
+        "brand": "ComfortCruise",
+        "model_name": "Relax 700",
+        "year_of_make": 2021,
+        "price": 780.00,
+        "color_schemes": ["Pink", "Beige"],
+        "short_description": "Designed for leisurely rides with unmatched comfort and ease.",
+        "image_source": "./images/ShopPage/example.avif"
+    }
+]
