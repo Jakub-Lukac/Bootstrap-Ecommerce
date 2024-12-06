@@ -17,9 +17,7 @@ function SetupAccountButton() {
 
   accBtn.setAttribute(
     "href",
-    loggedInUser
-      ? getRelativePath("pages/userAccount.html")
-      : getRelativePath("pages/login.html")
+    loggedInUser ? "/pages/userAccount.html" : "pages/login.html"
   );
 }
 
@@ -29,6 +27,7 @@ function getRelativePath(targetPath) {
   // counts the number of slashes in the current path and subtracts 2, to reach root
   const depth = window.location.pathname.split("/").length - 2;
   // creates relative path
+  // https://stackoverflow.com/questions/1034621/get-the-current-url-with-javascript
   const prefix = "../".repeat(depth);
   return prefix + targetPath;
 }
