@@ -17,7 +17,7 @@ function SetupAccountButton() {
 
   accBtn.setAttribute(
     "href",
-    loggedInUser ? "/pages/userAccount.html" : "pages/login.html"
+    loggedInUser ? "/pages/userAccount.html" : "/pages/login.html"
   );
 }
 
