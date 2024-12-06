@@ -48,7 +48,7 @@ function ShowErrorAlert(form) {
   // display red alert
   const errorAlert = document.createElement("div");
   errorAlert.id = "errorAlert";
-  errorAlert.setAttribute("class", "alert alert-danger");
+  errorAlert.setAttribute("class", "alert alert-danger mt-2");
   errorAlert.setAttribute("role", "alert");
   errorAlert.textContent = "Invalid Login Credentials!";
   form.append(errorAlert);
@@ -56,7 +56,7 @@ function ShowErrorAlert(form) {
 
 function ShowSuccessAlert(form) {
   const successfulAlert = document.createElement("div");
-  successfulAlert.setAttribute("class", "alert alert-success");
+  successfulAlert.setAttribute("class", "alert alert-success mt-2");
   successfulAlert.setAttribute("role", "alert");
   successfulAlert.textContent =
     "Login successful! You will be redirected shortly.";

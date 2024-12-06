@@ -96,7 +96,7 @@ function ShowErrorAlert(container, message) {
   // display red alert
   const errorAlert = document.createElement("div");
   errorAlert.id = "errorAlert";
-  errorAlert.setAttribute("class", "alert alert-danger");
+  errorAlert.setAttribute("class", "alert alert-danger mt-2");
   errorAlert.setAttribute("role", "alert");
   errorAlert.textContent = message;
   container.append(errorAlert);

@@ -23,8 +23,12 @@ function SetupAccountButton() {
   );
 }
 
+// window.location.pathname.split('/'): ["", "index.html"] // lenght 2
+// window.location.pathname.split('/'): ["", "pages", "shop.html"] // length 3
 function getRelativePath(targetPath) {
+  // counts the number of slashes in the current path and subtracts 2, to reach root
   const depth = window.location.pathname.split("/").length - 2;
+  // creates relative path
   const prefix = "../".repeat(depth);
   return prefix + targetPath;
 }

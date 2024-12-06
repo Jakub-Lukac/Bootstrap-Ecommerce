@@ -29,7 +29,7 @@ function RegisterUser() {
   // Retrieve the usersDetails array from localStorage, or initialize it if it doesn't exist
   let usersDetails = JSON.parse(localStorage.getItem("usersDetails")) || [];
 
-  const userExists = usersDetails.some((user) => user.email === email);
+  const userExists = usersDetails.some((user) => user.email === newUser.email);
 
   // Log out all other users
   const loggedInUsers = usersDetails.some((user) => user.loggedIn === "true");
@@ -71,7 +71,7 @@ function ShowErrorAlert(form) {
   errorAlert.setAttribute("class", "alert alert-danger");
   errorAlert.setAttribute("role", "alert");
   errorAlert.textContent =
-    "User with this email already exists. Please use a different email.";
+    "This user already exists. Please use a different email.";
   form.append(errorAlert);
 }
 
