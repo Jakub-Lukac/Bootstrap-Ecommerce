@@ -1,0 +1,10 @@
+$viewPortHeight: 70vh;
+$backgroundSize: cover;
+
+#hero {
+    height: $viewPortHeight;
+    background-image: url("../images/homePage/heroImage.avif");
+    background-position: 40% 15%;
+    background-size: $backgroundSize;
+}
+  
