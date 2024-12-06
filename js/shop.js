@@ -50,24 +50,39 @@ function displayBikeProductItems(bikes) {
 
     const cardTitle = document.createElement("h5");
     cardTitle.textContent = `${bike.brand} ${bike.model_name}`;
-    cardTitle.setAttribute("class", "card-title");
+    cardTitle.setAttribute("class", "card-title fw-bold");
 
     const cardDescription = document.createElement("p");
     cardDescription.textContent = `${bike.short_description}...`;
-    cardDescription.setAttribute("class", "card-text");
+    cardDescription.setAttribute("class", "card-text text-secondary");
 
-    const yearOfMake = document.createElement("p");
-    yearOfMake.textContent = bike.yearOfMake;
-    yearOfMake.setAttribute("class", "card-text");
+    const yearOfMake = document.createElement("div");
+    const yearOfMakeStaticText = document.createElement("span");
+    yearOfMakeStaticText.textContent = "Year of Make : ";
+    yearOfMakeStaticText.setAttribute("class", "fw-bold");
+    const yearOfMakeDynamicText = document.createElement("span");
+    yearOfMakeDynamicText.textContent = `${bike.year_of_make}`;
+    yearOfMakeDynamicText.setAttribute("class", "text-secondary");
 
-    const price = document.createElement("p");
-    price.textContent = `${bike.price}€`;
-    price.setAttribute("class", "card-text");
+    yearOfMake.setAttribute("class", "card-text ");
+    yearOfMake.append(yearOfMakeStaticText, yearOfMakeDynamicText);
+
+    const price = document.createElement("div");
+    const priceStaticText = document.createElement("span");
+    priceStaticText.textContent = "Price : ";
+    priceStaticText.setAttribute("class", "fw-bold");
+    const priceDynamicText = document.createElement("span");
+    // using innerHTML instead of textContent, as textContent can not interpret euro sign (html entity)
+    priceDynamicText.innerHTML = `${bike.price} &euro;`;
+    priceDynamicText.setAttribute("class", "fw-bold text-success");
+
+    price.setAttribute("class", "card-text mt-3 mb-3");
+    price.append(priceStaticText, priceDynamicText);
 
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = "Add to cart";
-    button.setAttribute("class", "btn btn-primary");
+    button.setAttribute("class", "btn btn-dark");
 
     button.addEventListener(
       "click",

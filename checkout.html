@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/badge.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -56,57 +57,58 @@
         </div>
     </nav>
 
-    <div id="container" class="container my-5 flex-grow-1">
-        <form id="checkOutForm" class="row g-4 my-3 justify-content-center">
+    <div id="container" class="container mt-5 flex-grow-1">
+        <form id="checkOutForm" class="row g-4 m-3 p-3 justify-content-center bg-white rounded shadow">
             <fieldset class="row my-2">
-                <legend>Delivery Details</legend>
+                <legend class="fw-bold text-secondary">Delivery Details</legend>
                 <div class="col-md-6">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    <label for="firstName" class="form-label text-secondary">First Name</label>
+                    <input type="text" class="form-control border-secondary" id="firstName" name="firstName" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    <label for="lastName" class="form-label text-secondary">Last Name</label>
+                    <input type="text" class="form-control border-secondary" id="lastName" name="lastName" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="addressLine1" class="form-label">Address Line 1</label>
-                    <input type="text" class="form-control" id="addressLine1" name="addressLine1" required>
+                    <label for="addressLine1" class="form-label text-secondary">Address Line 1</label>
+                    <input type="text" class="form-control border-secondary" id="addressLine1" name="addressLine1"
+                        required>
                 </div>
                 <div class="col-md-6">
-                    <label for="addressLine2" class="form-label">Address Line 2</label>
-                    <input type="text" class="form-control" id="addressLine2" name="addressLine2">
+                    <label for="addressLine2" class="form-label text-secondary">Address Line 2</label>
+                    <input type="text" class="form-control border-secondary" id="addressLine2" name="addressLine2">
                 </div>
                 <div class="col-md-6">
-                    <label for="eircode" class="form-label">Eircode</label>
-                    <input type="text" class="form-control" id="eircode" name="eircode" minlength="3"
+                    <label for="eircode" class="form-label text-secondary">Eircode</label>
+                    <input type="text" class="form-control border-secondary" id="eircode" name="eircode"
                         pattern="^[A-Z][0-9]{2}\s[A-Z][0-9][A-Z][0-9]$" required>
                 </div>
             </fieldset>
             <fieldset class="row my-2">
-                <legend>Payment Details</legend>
+                <legend class="fw-bold text-secondary">Payment Details</legend>
                 <div class="col-md-6 mb-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email"
+                    <label for="email" class="form-label text-secondary">Email</label>
+                    <input type="email" class="form-control border-secondary" id="email" name="email"
                         placeholder="Enter your email address" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="nameOnCard" class="form-label">Name on Card</label>
-                    <input type="text" class="form-control" id="nameOnCard" name="nameOnCard"
+                    <label for="nameOnCard" class="form-label text-secondary">Name on Card</label>
+                    <input type="text" class="form-control border-secondary" id="nameOnCard" name="nameOnCard"
                         placeholder="Enter name on your card" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="cardNumber" class="form-label">Card Number</label>
-                    <input type="text" class="form-control" id="cardNumber" name="cardNumber"
+                    <label for="cardNumber" class="form-label text-secondary">Card Number</label>
+                    <input type="text" class="form-control border-secondary" id="cardNumber" name="cardNumber"
                         pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="cvc" class="form-label">CVC</label>
-                    <input type="text" class="form-control" id="cvc" name="cvc" maxlength="3" pattern="[0-9]{3}"
-                        required>
+                    <label for="cvc" class="form-label text-secondary">CVC</label>
+                    <input type="text" class="form-control border-secondary" id="cvc" name="cvc" maxlength="3"
+                        pattern="[0-9]{3}" required>
                 </div>
             </fieldset>
-            <div class="mt-2 text-center">
-                <button type="submit" class="btn btn-primary">Checkout</button>
+            <div class="mt-2 mb-2 text-center">
+                <button type="submit" class="btn btn-dark text-light">Checkout</button>
             </div>
         </form>
     </div>

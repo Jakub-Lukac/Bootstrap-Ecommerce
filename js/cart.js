@@ -77,7 +77,7 @@ function DisplayCartItems() {
       const price = document.createElement("div");
       price.id = `price-${cartItem.id}`;
       price.setAttribute("class", "mt-2 fw-bold text-success");
-      price.textContent = `${cartItem.quantity * cartItem.price}€`;
+      price.innerHTML = `${cartItem.quantity * cartItem.price}&euro;`;
 
       const removeItem = document.createElement("i");
       removeItem.setAttribute("class", "bi bi-trash-fill");
@@ -101,13 +101,16 @@ function DisplayCartItems() {
     const finalPrice = document.createElement("div");
     finalPrice.id = "final-price";
     finalPrice.setAttribute("class", "text-end me-3 pb-4 fw-bold fs-5");
-    finalPrice.textContent = `Final Price: ${totalPrice}€`;
+    finalPrice.innerHTML = `Final Price: ${totalPrice}&euro;`;
 
     mainCard.appendChild(finalPrice);
   } else {
     const emptyCart = document.createElement("div");
     emptyCart.textContent = "Your cart is empty!";
-    emptyCart.setAttribute("class", "display-1 p-5 text-center");
+    emptyCart.setAttribute(
+      "class",
+      "display-1 p-5 text-center fw-bold text-secondary"
+    );
     mainCard.appendChild(emptyCart);
   }
 

@@ -10,43 +10,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-light text-dark">
     <div id="main" class="container mt-5 flex-grow-1">
         <div class="text-center mb-3">
             <a class="my-2 mx-3" href="index.html">
                 <img src="images/logo.png" width="100" height="40" alt="Rydex bicycles">
             </a>
         </div>
-        <form id="loginForm" class="row justify-content-center" action="">
-            <fieldset class="col-12 col-md-6 my-2 mx-2">
-                <legend>Login Details</legend>
+        <form id="loginForm" class="row justify-content-center p-3" action="">
+            <fieldset class="col-12 col-md-6 my-2 mx-2 p-5 bg-white rounded shadow">
+                <legend class="fw-bold text-secondary">Login Details</legend>
                 <div class="mb-2">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email"
+                    <label for="email" class="form-label text-secondary">Email</label>
+                    <input type="email" class="form-control border-secondary" id="email" name="email"
                         placeholder="Enter your email address" required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" minlength="8"
-                        placeholder="Enter your password" required>
+                    <label for="password" class="form-label text-secondary">Password</label>
+                    <input type="password" class="form-control border-secondary" id="password" name="password"
+                        minlength="8" placeholder="Enter your password" required>
                 </div>
                 <div class="mt-2 text-center">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn btn-dark text-light">Login</button>
                 </div>
                 <div class="mt-2 text-center">
-                    <a href="register.html">Dont have Account? Register here</a>
+                    <a href="register.html" class="text-secondary">Don't have an Account? Register here</a>
                 </div>
                 <div class="mt-2 text-center">
-                    <a href="forgotPassword.html">Forgot Password? Click here</a>
+                    <a href="forgotPassword.html" class="text-secondary">Forgot Password? Click here</a>
                 </div>
             </fieldset>
         </form>
     </div>
 
-    <footer class="text-center bg-secondary text-center mt-3 p-3 align-bottom">
-        <p class="text-light fw-bold m-0">Copyright &copy; 2024 Rydex Bicycles</p>
+    <footer class="text-center bg-dark text-light mt-3 p-3 align-bottom">
+        <p class="m-0 fw-bold">Copyright &copy; 2024 Rydex Bicycles</p>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
