@@ -17,7 +17,9 @@ function SetupAccountButton() {
 
   accBtn.setAttribute(
     "href",
-    loggedInUser ? "./pages/userAccount.html" : "./pages/login.html"
+    loggedInUser
+      ? "/Bootstrap-Ecommerce/pages/userAccount.html"
+      : "/Bootstrap-Ecommerce/pages/login.html"
   );
 }
 
