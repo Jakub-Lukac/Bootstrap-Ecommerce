@@ -234,7 +234,10 @@ function UpdateFinalPrice(cartItems) {
     const mainCard = document.getElementById("shoppingCard");
     const emptyCart = document.createElement("div");
     emptyCart.textContent = "Your cart is empty!";
-    emptyCart.setAttribute("class", "display-1 p-5 text-center");
+    emptyCart.setAttribute(
+      "class",
+      "display-1 p-5 text-center fw-bold text-secondary"
+    );
     mainCard.appendChild(emptyCart);
     return; // leave function
   }

@@ -15,11 +15,17 @@ function SetupAccountButton() {
   const accBtn = document.getElementById("accBtn");
   const loggedInUser = GetLoggedInUser();
 
-  accBtn.setAttribute(
+  /*accBtn.setAttribute(
     "href",
     loggedInUser
       ? GetRelativePath("pages/userAccount.html")
       : GetRelativePath("pages/login.html")
+  );*/
+  accBtn.setAttribute(
+    "href",
+    loggedInUser
+      ? "/Bootstrap-Ecommerce/pages/userAccount.html"
+      : "/Bootstrap-Ecommerce/pages/login.html"
   );
 }
 
