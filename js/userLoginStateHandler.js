@@ -30,8 +30,10 @@ function GetRelativePath(targetPath) {
 
   // Check if the current path contains index.html
   if (currentPath.includes("index.html")) {
+    var a = `./${targetPath}`;
     return `./${targetPath}`;
   } else {
+    var b = `./${targetPath.split("/").pop()}`;
     return `./${targetPath.split("/").pop()}`; // Get the filename only (e.g., 'login.html')
   }
 }

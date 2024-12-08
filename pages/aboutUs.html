@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/badge.css">
 </head>
 
-<body>
+<body class="bg-light text-dark">
     <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top">
         <div class="container-fluid container-lg d-flex justify-content-start">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -23,59 +23,80 @@
                 <img src="../images/logo.png" width="100" height="40" alt="Rydex bicycles">
             </a>
 
-            <!-- This one is not being displayed on lg and larger screens -->
-
             <div class="d-flex ms-auto gap-4 order-xs-1 order-md-2">
                 <div id="accountWrapper" class="position-relative d-inline-block">
                     <span id="cartCount"
                         class="position-absolute top-0 start-0 badge rounded-pill text-bg-primary"></span>
-                    <a class="nav-link" href="cart.html">
+                    <a class="nav-link" href="./cart.html">
                         <i class="bi bi-cart-fill fs-1"></i>
                     </a>
                 </div>
                 <div id="accountWrapper" class="position-relative d-inline-block">
-                    <!-- Text Badge -->
                     <span id="userGreeting"
                         class="position-absolute top-0 start-0 badge rounded-pill text-bg-primary"></span>
-                    <!-- Account Icon -->
                     <a id="accBtn" class="nav-link" href="">
                         <i class="bi bi-person-circle fs-1"></i>
                     </a>
                 </div>
             </div>
 
-
             <div class="collapse navbar-collapse justify-content-end mx-5 order-xs-2 order-md-1"
                 id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="./shop.html">Shop</a>
-                    <a class="nav-link" href="./aboutUs.html">About us</a>
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                    <a class="nav-link active" href="./aboutUs.html">About us</a>
                     <a class="nav-link" href="./contact.html">Contact us</a>
                 </div>
             </div>
-
-            <!-- This one is being displayed on lg and larger screens -->
-
         </div>
     </nav>
 
-    <div class="container my-5 text-xs-left text-md-center mb-5">
-        <div class="display-3 fw-bold">Ride Into Adventure</div>
-        <div class="display-5 fw-light text-secondary">Discover the perfect bike for every journey.</div>
+    <div class="container my-5">
+        <div class="text-xs-left text-md-center">
+            <div class="display-3 fw-bold text-secondary">About Rydex</div>
+            <div class="fs-5 text-muted">The premier destination for bicycles in Europe.</div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="images/about_us.jpg" class="img-fluid rounded shadow" alt="Rydex Bicycles">
+            </div>
+            <div class="col-md-6">
+                <div class="display-5 fw-bold text-dark mb-3">Who We Are</div>
+                <div class="mb-3">At Rydex, we are passionate about cycling and committed to bringing you the best
+                    bicycles for every
+                    journey.
+                    Based in the heart of Austria, we’ve proudly served cycling enthusiasts across Europe for over a
+                    decade.</div>
+                <div class="display-5 fw-bold text-dark mb-3">Why Choose Us?</div>
+                <div class="list-group">
+                    <div class="list-group-item bg-light text-dark">Premium-quality bicycles for all terrains and needs.
+                    </div>
+                    <div class="list-group-item bg-light text-dark">Dedicated to sustainability and eco-friendly
+                        practices.</div>
+                    <div class="list-group-item bg-light text-dark">Exceptional customer service and expert advice.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <div id="products-container" class="row g-4 mx-1"></div>
+    <div class="bg-secondary text-light py-5">
+        <div class="container text-center">
+            <div class="display-5 fw-bold text-light">Our Vision</div>
+            <div class="fs-5">To inspire adventure and healthier lifestyles by promoting cycling across the world.</div>
+            <div class="display-5 fw-bold text-light mt-4">Our Mission</div>
+            <div class="fs-5">To provide high-quality bicycles and outstanding service, ensuring every ride is
+                unforgettable.</div>
+        </div>
     </div>
 
-    <footer class="text-center bg-dark text-light mt-3 p-3 align-bottom">
-        <p class="m-0 fw-bold">Copyright &copy; 2024 Rydex Bicycles</p>
+    <footer class="bg-dark text-center mt-3 p-3 align-bottom">
+        <div class="text-light fw-bold m-0">Copyright &copy; 2024 Rydex Bicycles</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="../js/shop.js"></script>
     <script src="../js/userLoginStateHandler.js"></script>
 </body>
 
