@@ -18,20 +18,22 @@ function SetupAccountButton() {
   accBtn.setAttribute(
     "href",
     loggedInUser
-      ? "/Bootstrap-Ecommerce/pages/userAccount.html"
-      : "/Bootstrap-Ecommerce/pages/login.html"
+      ? GetRelativePath("pages/userAccount.html")
+      : GetRelativePath("pages/login.html")
   );
 }
 
 // window.location.pathname.split('/'): ["", "index.html"] // lenght 2
 // window.location.pathname.split('/'): ["", "pages", "shop.html"] // length 3
-function getRelativePath(targetPath) {
-  // counts the number of slashes in the current path and subtracts 2, to reach root
-  const depth = window.location.pathname.split("/").length - 2;
-  // creates relative path
-  // https://stackoverflow.com/questions/1034621/get-the-current-url-with-javascript
-  const prefix = "../".repeat(depth);
-  return prefix + targetPath;
+function GetRelativePath(targetPath) {
+  const currentPath = window.location.pathname;
+
+  // Check if the current path contains index.html
+  if (currentPath.includes("index.html")) {
+    return `./${targetPath}`;
+  } else {
+    return `./${targetPath.split("/").pop()}`; // Get the filename only (e.g., 'login.html')
+  }
 }
 
 // Once again we find the loggedIn user
