@@ -56,9 +56,18 @@
             <div class="display-3 fw-bold text-secondary">About Rydex</div>
             <div class="fs-5 text-muted">The premier destination for bicycles in Europe.</div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <img src="images/about_us.jpg" class="img-fluid rounded shadow" alt="Rydex Bicycles">
+        <div class="row mt-4 ">
+            <div class="col-md-6 text-center mb-5 pt-1 pt-md-5 pt-lg-3">
+                <picture>
+                    <!-- For large screens (lg) and up, display img1 -->
+                    <source media="(min-width: 1024px)" srcset="../images/src/scenery07.avif">
+
+                    <!-- For medium screens (md) and up, display img2 -->
+                    <source media="(min-width: 768px)" srcset="../images/src/scenery08.avif">
+
+                    <!-- For small (s) and extra small (xd) screens, display img1 -->
+                    <img class="img-fluid w-75 rounded shadow" src="../images/src/scenery07.avif" alt="Responsive image">
+                </picture>
             </div>
             <div class="col-md-6">
                 <div class="display-5 fw-bold text-dark mb-3">Who We Are</div>
