@@ -7,9 +7,22 @@
 function RegisterUser() {
   event.preventDefault();
 
+  const form = document.getElementById("registerForm");
+
   // if the user inputs invalid information before, and then starts the
   // registration process once again, we want to clear previous error alerts
   ClearErrorAlerts();
+
+  if (
+    document.getElementById("password").value !==
+    document.getElementById("confirmPassword").value
+  ) {
+    ShowErrorAlert(form, "Wrong password!");
+    setTimeout(() => {
+      ClearErrorAlerts();
+    }, 1000);
+    return;
+  }
 
   // Create a new user object
   const newUser = {
@@ -39,10 +52,14 @@ function RegisterUser() {
     });
   }
 
-  const form = document.getElementById("registerForm");
-
   if (userExists) {
-    ShowErrorAlert(form);
+    ShowErrorAlert(
+      form,
+      "This user already exists. Please use a different email."
+    );
+    setTimeout(() => {
+      ClearErrorAlerts();
+    }, 1000);
     return;
   }
 
@@ -65,13 +82,12 @@ function ClearErrorAlerts() {
   if (alert) alert.remove();
 }
 
-function ShowErrorAlert(form) {
+function ShowErrorAlert(form, message) {
   const errorAlert = document.createElement("div");
   errorAlert.id = "errorAlert";
   errorAlert.setAttribute("class", "alert alert-danger");
   errorAlert.setAttribute("role", "alert");
-  errorAlert.textContent =
-    "This user already exists. Please use a different email.";
+  errorAlert.textContent = message;
   form.append(errorAlert);
 }
 
