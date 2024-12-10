@@ -80,7 +80,7 @@ function DisplayCartItems() {
       price.innerHTML = `${cartItem.quantity * cartItem.price}&euro;`;
 
       const removeItem = document.createElement("i");
-      removeItem.setAttribute("class", "bi bi-trash-fill");
+      removeItem.setAttribute("class", "bi bi-trash-fill text-danger");
       removeItem.id = `removeItem-${cartItem.id}`;
 
       removeItem.addEventListener("click", () =>
