@@ -104,6 +104,8 @@ function DisplayCartItems() {
     finalPrice.innerHTML = `Final Price: ${totalPrice}&euro;`;
 
     mainCard.appendChild(finalPrice);
+
+    document.getElementById("proceedToPayment").removeAttribute("disabled");
   } else {
     const emptyCart = document.createElement("div");
     emptyCart.textContent = "Your cart is empty!";
@@ -112,8 +114,11 @@ function DisplayCartItems() {
       "display-1 p-5 text-center fw-bold text-secondary"
     );
     mainCard.appendChild(emptyCart);
-  }
 
+    document
+      .getElementById("proceedToPayment")
+      .setAttribute("disabled", "true");
+  }
   // after displaying all the cart items, display final price
 }
 
@@ -135,6 +140,13 @@ function RemoveItem(cartItems, cartItem) {
 
     // Update the final price display
     UpdateFinalPrice(cartItems);
+  }
+
+  // if there are no more items, disable button
+  if (cartItems.length === 0) {
+    document
+      .getElementById("proceedToPayment")
+      .setAttribute("disabled", "true");
   }
 }
 
@@ -200,6 +212,12 @@ function DecrementItemCount(cartItems, cartItem) {
     }
   } else {
     console.error("Item not found in the cart.");
+  }
+
+  if (cartItems.length === 0) {
+    document
+      .getElementById("proceedToPayment")
+      .setAttribute("disabled", "true");
   }
 }
 
