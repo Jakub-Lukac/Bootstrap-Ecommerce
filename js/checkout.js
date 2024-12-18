@@ -107,7 +107,6 @@ function ShowSuccessAlert(container) {
   successfulAlert.setAttribute("class", "alert alert-success mt-2");
   successfulAlert.setAttribute("role", "alert");
   successfulAlert.textContent =
-    "Payment successful! You will be redirected to home page shortly.";
-
+    "Payment successful! Thank you for your order. You will be redirected to home page shortly.";
   container.appendChild(successfulAlert);
 }
