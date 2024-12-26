@@ -23,22 +23,25 @@
             <fieldset class="row my-2">
                 <legend class="fw-bold text-secondary">Personal Details</legend>
                 <div class="col-md-4">
-                    <label for="firstName" class="form-label text-secondary">First Name</label>
+                    <label for="firstName" class="form-label text-secondary">First Name <span
+                            class="text-danger">*</span></label>
                     <input type="text" class="form-control border-secondary" id="firstName" name="firstName" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="lastName" class="form-label text-secondary">Last Name</label>
+                    <label for="lastName" class="form-label text-secondary">Last Name <span
+                            class="text-danger">*</span></label>
                     <input type="text" class="form-control border-secondary" id="lastName" name="lastName" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="dob" class="form-label text-secondary">Date</label>
+                    <label for="dob" class="form-label text-secondary">Date <span class="text-danger">*</span></label>
                     <input type="date" class="form-control border-secondary" id="dob" name="dob" required>
                 </div>
             </fieldset>
             <fieldset class="row my-2">
                 <legend class="fw-bold text-secondary">Address Details</legend>
                 <div class="col-md-6">
-                    <label for="addressLine1" class="form-label text-secondary">Address Line 1</label>
+                    <label for="addressLine1" class="form-label text-secondary">Address Line 1 <span
+                            class="text-danger">*</span></label>
                     <input type="text" class="form-control border-secondary" id="addressLine1" name="addressLine1"
                         required>
                 </div>
@@ -47,7 +50,8 @@
                     <input type="text" class="form-control border-secondary" id="addressLine2" name="addressLine2">
                 </div>
                 <div class="col-md-6">
-                    <label for="eircode" class="form-label text-secondary">Eircode</label>
+                    <label for="eircode" class="form-label text-secondary">Eircode <span
+                            class="text-danger">*</span></label>
                     <input type="text" class="form-control border-secondary" id="eircode" name="eircode"
                         pattern="^[A-Z][0-9]{2}\s[A-Z][0-9][A-Z][0-9]$" required>
                 </div>
@@ -55,17 +59,20 @@
             <fieldset class="row my-2">
                 <legend class="fw-bold text-secondary">Login Details</legend>
                 <div class="col-md-6 mb-2">
-                    <label for="email" class="form-label text-secondary">Email</label>
+                    <label for="email" class="form-label text-secondary">Email <span
+                            class="text-danger">*</span></label>
                     <input type="email" class="form-control border-secondary" id="email" name="email"
                         placeholder="Enter your email address" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="password" class="form-label text-secondary">Password</label>
+                    <label for="password" class="form-label text-secondary">Password <span
+                            class="text-danger">*</span></label>
                     <input type="password" class="form-control border-secondary" id="password" name="password"
                         minlength="8" placeholder="Enter your password" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="confirmPassword" class="form-label text-secondary">Confirm Password</label>
+                    <label for="confirmPassword" class="form-label text-secondary">Confirm Password <span
+                            class="text-danger">*</span></label>
                     <input type="password" class="form-control border-secondary" id="confirmPassword"
                         name="confirmPassword" minlength="8" placeholder="Confirm your password" required>
                 </div>
